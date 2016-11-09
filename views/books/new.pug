@@ -1,0 +1,20 @@
+extends ../app.pug
+
+block content
+  .container
+    .row
+      .col-xs-8.offset-xs-2
+        h1 Create new book
+        hr
+        form
+          div(class="form-group")
+            label Title
+            input(type="text" class="form-control")
+          div(class="form-group")
+            label Author
+            input(type="text" class="form-control")
+          div(class="form-group")
+            label Desctiption
+            textarea(class="form-control" rows=5)
+          div(type="text area" class="form-control")
+            button(type="submit" class="btn btn-lg btn-succsess") Create a book
