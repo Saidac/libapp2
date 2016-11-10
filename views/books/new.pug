@@ -6,15 +6,18 @@ block content
       .col-xs-8.offset-xs-2
         h1 Create new book
         hr
-        form
+        form(action="/books" method="POST")
           div(class="form-group")
-            label Title
-            input(type="text" class="form-control")
+            label(for="book-title") Title
+            input(name="title" type="text" class="form-control" id="books-title")
           div(class="form-group")
-            label Author
-            input(type="text" class="form-control")
+            label(for="book-cover-image") Cover Image URL
+            input(name="imageURL" type="text" class="form-control" id="books-cover-image")
           div(class="form-group")
-            label Desctiption
-            textarea(class="form-control" rows=5)
-          div(type="text area" class="form-control")
-            button(type="submit" class="btn btn-lg btn-succsess") Create a book
+            label(for="book-author") Author
+            input(name="author" type="text" class="form-control" id="book-author")
+          div(class="form-group")
+            label(for="book-desctiption") Decription
+            textarea(name="decription" class="form-control" rows=5 id="book-decription")
+          div(class="form-group text-xs-right")
+            button(type="submit" class="btn btn-lg btn-success") Create a book

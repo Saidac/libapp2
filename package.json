@@ -4,6 +4,25 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "morgan": "^1.7.0"
-  }
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "pg": "^6.1.0",
+    "pug": "^2.0.0-beta6",
+    "sequelize": "^3.25.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saidac/libapp2.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Saidac/libapp2/issues"
+  },
+  "homepage": "https://github.com/Saidac/libapp2#readme",
+  "description": ""
 }
