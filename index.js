@@ -13,6 +13,7 @@ var booksRouter = require('./routes/books');
 
 var Book = sequelize.define('book', {
   title: Sequelize.STRING,
+  slug: Sequelize.STRING,
   imageURL: Sequelize.STRING,
   author: Sequelize.STRING,
   description: Sequelize.TEXT
